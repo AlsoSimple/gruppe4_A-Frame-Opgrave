@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <!-- <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script> -->
-  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+
   <body style="margin: 0px; overflow: hidden">
     <a-scene embedded arjs>
       <!-- Marker 1: Oliver ID 16 -->
@@ -15,12 +16,12 @@
         ></a-entity>
       </a-marker>
 
-      <a-marker type="pattern" url="ASSETS/gltf/asswipe/Oliver.patt">
+      <!-- <a-marker type="pattern" url="ASSETS/gltf/asswipe/Oliver.patt">
         <a-entity
           gltf-model="ASSETS/GLB/simple_toilet_paper_2.0.glb"
           scale="0.5 0.5 0.5"
         ></a-entity>
-      </a-marker>
+      </a-marker> -->
 
       <a-entity camera></a-entity>
     </a-scene>
