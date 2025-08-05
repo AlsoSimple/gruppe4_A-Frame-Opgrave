@@ -5,7 +5,10 @@
   <!-- <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script> -->
 
   <body style="margin: 0px; overflow: hidden">
-    <a-scene embedded arjs>
+    <a-scene
+      embedded
+      arjs="sourceType: webcam; detectionMode: mono_and_matrix; matrixCodetype: 4x4_BCH_13_5_5"
+    >
       <!-- Marker 1: Oliver ID 16 -->
 
       <a-marker preset="hiro">
@@ -16,12 +19,12 @@
         ></a-entity>
       </a-marker>
 
-      <!-- <a-marker type="pattern" url="ASSETS/gltf/asswipe/Oliver.patt">
+      <a-marker type="barcode" value="16">
         <a-entity
           gltf-model="ASSETS/GLB/simple_toilet_paper_2.0.glb"
           scale="0.5 0.5 0.5"
         ></a-entity>
-      </a-marker> -->
+      </a-marker>
 
       <a-entity camera></a-entity>
     </a-scene>
