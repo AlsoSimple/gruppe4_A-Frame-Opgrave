@@ -1,19 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Debuggers AR</title>
-    <link rel="stylesheet" href="ASSETS/CSS/main.css" />
-    <script src="ASSETS/JS/script.js" defer></script>
-    <!-- <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script> -->
-    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-    <!-- we import arjs version without NFT but with marker + location based support -->
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-  </head>
-
-  <!-- GLOBAL HEADER -->
-
+<html>
+  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  <!-- we import arjs version without NFT but with marker + location based support -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin: 0px; overflow: hidden">
     <a-scene embedded arjs>
       <a-marker preset="hiro">
@@ -33,10 +22,4 @@
       <a-entity camera></a-entity>
     </a-scene>
   </body>
-
-  <!-- GLOBAL NAVIGATION -->
-
-  <!-- MAIN CONTENT -->
-
-  <!-- GLOBAL FOOTER -->
 </html>
