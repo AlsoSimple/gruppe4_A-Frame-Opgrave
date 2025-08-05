@@ -24,7 +24,3 @@ html {
     /* overflow-x: hidden; */
 }
 
-body {
-    color: var(--color-white);
-    background: -webkit-linear-gradient(-40deg, var(--color-background), var(--color-secondary));
-}
