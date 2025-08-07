@@ -20,7 +20,91 @@
 }
 
 html {
-    scroll-behavior: smooth;
-    /* overflow-x: hidden; */
+scroll-behavior: smooth;
+overflow: hidden;
+/* overflow-x: hidden; */
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
 }
 
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #ccc;
+}
+
+article h3 {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.vr-button {
+    position: relative;
+    background: #222;
+    border: 3px solid #0ff;
+    border-radius: 50px;
+    width: 180px;
+    height: 70px;
+    cursor: pointer;
+    box-shadow:
+    inset 0 0 10px #0ff88f88,
+    0 0 15px #0ff;
+    margin-top: 20rem;
+}
+
+.vr-button:hover {
+    background: #0ff;
+    box-shadow:
+    inset 0 0 15px #0ff,
+    0 0 20px #0ff;
+}
+
+/* The two lens circles */
+.vr-button::before,
+.vr-button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 50px;
+    background: #111;
+    border-radius: 50% / 60%;
+    border: 2px solid #0ff;
+}
+
+.vr-button::before {
+    left: 20px;
+}
+
+.vr-button::after {
+    right: 20px;
+}
+
+/* Button text on top */
+.vr-button span {
+  position: relative;
+  color: rgb(0, 0, 0); /* bright cyan */
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 70px;
+  user-select: none;
+  z-index: 1;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 10px white;
+}
