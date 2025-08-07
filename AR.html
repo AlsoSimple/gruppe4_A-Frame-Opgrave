@@ -39,12 +39,14 @@
       <a-marker type="barcode" value="18">
         <!-- Barcode eller stregkodemarkør er en automatiske lavet og generede markør, da den dannes ud fra matrixberegninger, der betyder kvadratiske række som søjler. -->
         <a-entity gltf-model="ASSETS/gltf/toilet/scene.gltf" position="0 0 0" scale="2 2 2"></a-entity>
+        <!-- Her indlæse vores 3D-Objektet, derefter kommer placering af objektet og efter kommer opløsningen af objektet. -->
         <a-text value="Simon Hasselflug" color="blue" position="-2 3 0" width="10"></a-text>
       </a-marker>
-
-      <!-- a-entity betyder at a-scene indeholder en liste a-entity elementer, der skaber en scene. Det kan som udgangspunkt være let geometri til mere vanskelige modeller. -->
+      <!-- Ved a frame eller <a-scene> er element globale rodobjekt, som indeholder alle slags elementer (entiteter) i den virtuelle verden, du laver, opretter og håndtere den under ved 3D veje og objekter som eksempelvis via lærred og VR og AR-understøtter. -->
+      <!-- a-scene er vigtig med at holde sammen på A-frame-scene, som tager sig af tekniske understøttelse, der fokus på at skabe indhold, der ønsker at vise i den virtuelle verden. -->
 
       <a-entity camera></a-entity>
+      <!-- a-entity betyder at a-scene indeholder en liste a-entity elementer, der skaber en scene. Det kan som udgangspunkt være let geometri til mere vanskelige modeller. -->
     </a-scene>
   </body>
 </html>
