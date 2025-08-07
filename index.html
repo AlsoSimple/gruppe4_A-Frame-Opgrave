@@ -1,48 +1,26 @@
 <!DOCTYPE html>
-<html>
-  <!-- <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script> -->
-  <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
-  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-  <!-- <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script> -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AR genkendelse app</title>
+  <link rel="stylesheet" href="./ASSETS/CSS/main.css">
+</head>
+<body>
 
-  <body style="margin: 0px; overflow: hidden">
-    <a-scene embedded arjs="sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 4x4_BCH_13_5_5;">
-      <!-- Det er en del AR.js et JavaScript bibliotek til web AR. Ofte anvendes der <a-scene> i A-Frame til at AR funktioner. -->
-      <!-- Webcame: Dette viser en kamerakilde, det er et webkamera i forhold til en video og billede. -->
-      <!-- Mono_and_matrix:  AR.js skal anvende både monokromo markør som f.eks. Hiro-markøren og matrix- baserede stregkode som qr-kode. Hvilket gør at begge markører kan bruges i en og samme scene. -->
-      <!-- matrixCodeType: 4x4_BCH_13_5_5; Her vise en type matrix-kode/stregkode mode som anvendes. -->
-      <!-- 4x4: Menes der at markøren har et 4x4 gitter. -->
-      <!-- BCH_13_5_5: Her henvises der til BCH-fejlkorrektionskode, (BCH betyder Bose-Chaudhuri-Hocquenghem), som anvendes til sikker aflæsning, selv hvis nogle af markørerne og stregkoderne er uklare. -->
+  <h1>The Debuggers V2</h1>
+  <article>
+    <h3>Velkommen til AR genkendelse app.</h3>
+    <p>Denne app kan genkende 4x4_BCH_13_5_5-patternnumrene 15, 16, 17 og 18.</p>
+    <p>Appen bruger AR.js til mønster-genkendelse og A-Frame til at vise 3D-modeller i AR-oplevelsen."</p>
+    <p>Hvert pattern viser eleven's avatar og navn sammen med avataren.</p>
+    <p>Der kan vises flere avatar & navne på samme tid.</p>
+    <p>For at se AR-oplevelsen skal du bruge et kamera og en understøttet enhed.</p>
+  </article>
 
-      <!-- Marker 1: Oliver ID 16 -->
-      <a-marker preset="hiro">
-        <!-- Det vil sige  at den henvise og arbejder med a-marker.
-         Hiro maker er en standardmarkør, men er ikke særlig brugervendelig. -->
-        <a-entity position="0 0 0" scale="0.05 0.05 0.05" gltf-model="https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"></a-entity>
-      </a-marker>
-
-      <a-marker type="barcode" value="15">
-        <a-entity gltf-model="ASSETS/gltf/asswipe/scene.gltf" position="0 0 0" scale="0.5 0.5 0.5"></a-entity>
-        <a-text value="Goober" color="red" position="0 2 0"></a-text>
-      </a-marker>
-
-      <a-marker type="barcode" value="16">
-        <a-entity gltf-model="ASSETS/gltf/plunger/scene.gltf" position="0 0 0" scale="1 1 1"></a-entity>
-      </a-marker>
-
-      <a-marker type="barcode" value="17">
-        <a-entity gltf-model="ASSETS/gltf/garbageCan/scene.gltf" position="0 0 0" scale="1.5 1.5 1.5"></a-entity>
-      </a-marker>
-
-      <a-marker type="barcode" value="18">
-        <!-- Barcode eller stregkodemarkør er en automatiske lavet og generede markør, da den dannes ud fra matrixberegninger, der betyder kvadratiske række som søjler. -->
-        <a-entity gltf-model="ASSETS/gltf/toilet/scene.gltf" position="0 0 0" scale="2 2 2"></a-entity>
-        <!-- Her indlæse vores 3D-Objektet, derefter kommer placering af objektet og efter kommer opløsningen af objektet. -->
-      </a-marker>
-
-      <!-- a-entity betyder at a-scene indeholder en liste a-entity elementer, der skaber en scene. Det kan som udgangspunkt være let geometri til mere vanskelige modeller. -->
-
-      <a-entity camera></a-entity>
-    </a-scene>
-  </body>
+  <p>For at starte AR oplevelsen, klik på knappen nedenfor:</p>
+  <button class="vr-button" onclick="window.location.href='AR.html'">
+    <span>Launch AR</span>
+  </button>
+</body>
 </html>
