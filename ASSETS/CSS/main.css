@@ -1,105 +1,105 @@
 :root {
-    --color-text: #ecf1f8;
-    --color-background: #050300;
-    --color-primary: #153d79;
-    --color-secondary: #142339;
-    --color-accent: #439EA8;
-    --color-white: #efefef;
-    --color-black: #030303;
-    --color-lightgrey: #ccc;
-    --color-grey: #9a9a9a;
-    --color-grey-tp: #cccccc80;
-
+  --color-text: #ecf1f8;
+  --color-background: #050300;
+  --color-primary: #153d79;
+  --color-secondary: #142339;
+  --color-accent: #439EA8;
+  --color-white: #efefef;
+  --color-black: #030303;
+  --color-lightgrey: #ccc;
+  --color-grey: #9a9a9a;
+  --color-grey-tp: #cccccc80;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html {
-scroll-behavior: smooth;
-overflow: hidden;
-/* overflow-x: hidden; */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
+
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    color: #fff;
-    font-family: 'Helvetica Neue', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
+  margin: 0;
+  padding: 2rem;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  gap: 2rem;
 }
 
 h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: #ccc;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ccc;
 }
 
 article h3 {
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
+
 .vr-button {
-    position: relative;
-    background: #222;
-    border: 3px solid #0ff;
-    border-radius: 50px;
-    width: 180px;
-    height: 70px;
-    cursor: pointer;
-    box-shadow:
+  position: relative;
+  background: #222;
+  border: 3px solid #0ff;
+  border-radius: 50px;
+  width: 180px;
+  height: 70px;
+  cursor: pointer;
+  box-shadow:
     inset 0 0 10px #0ff88f88,
     0 0 15px #0ff;
-    margin-top: 20rem;
+  margin-top: 1rem;
 }
 
 .vr-button:hover {
-    background: #0ff;
-    box-shadow:
+  background: #0ff;
+  box-shadow:
     inset 0 0 15px #0ff,
     0 0 20px #0ff;
 }
 
-/* The two lens circles */
+/* VR Goggles Eyes */
 .vr-button::before,
 .vr-button::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 60px;
-    height: 50px;
-    background: #111;
-    border-radius: 50% / 60%;
-    border: 2px solid #0ff;
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 50px;
+  background: #111;
+  border-radius: 50% / 60%;
+  border: 2px solid #0ff;
 }
 
 .vr-button::before {
-    left: 20px;
+  left: 20px;
 }
 
 .vr-button::after {
-    right: 20px;
+  right: 20px;
 }
 
-/* Button text on top */
 .vr-button span {
   position: relative;
-  color: rgb(0, 0, 0); /* bright cyan */
+  color: rgb(0, 0, 0);
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 70px;
@@ -107,4 +107,49 @@ article h3 {
   z-index: 1;
   letter-spacing: 1.5px;
   text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 10px white;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.25rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+  }
+
+  article {
+    margin: 0;
+    padding: 0;
+  }
+
+  .vr-button {
+    width: 120px;
+    height: 50px;
+    margin-top: 0.3rem;
+  }
+
+  .vr-button::before,
+  .vr-button::after {
+    width: 35px;
+    height: 30px;
+  }
+
+  .vr-button span {
+    font-size: 0.85rem;
+    line-height: 50px;
+  }
 }
