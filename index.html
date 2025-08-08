@@ -1,26 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AR genkendelse app</title>
-  <link rel="stylesheet" href="./ASSETS/CSS/main.css">
-</head>
-<body>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AR genkendelse app</title>
+    <link rel="stylesheet" href="./ASSETS/CSS/main.css" />
+  </head>
+  <body>
+    <h1>The Debuggers V2</h1>
 
-  <h1>The Debuggers V2</h1>
-  <article>
-    <h3>Velkommen til AR genkendelse app.</h3>
-    <p>Denne app kan genkende 4x4_BCH_13_5_5-patternnumrene 15, 16, 17 og 18.</p>
-    <p>Appen bruger AR.js til mønster-genkendelse og A-Frame til at vise 3D-modeller i AR-oplevelsen."</p>
-    <p>Hvert pattern viser eleven's avatar og navn sammen med avataren.</p>
-    <p>Der kan vises flere avatar & navne på samme tid.</p>
-    <p>For at se AR-oplevelsen skal du bruge et kamera og en understøttet enhed.</p>
-  </article>
+    <article>
+      <h3>Velkommen til AR genkendelse app</h3>
+      <p>
+        Denne webapp genkender <strong>4x4_BCH_13_5_5</strong>-markers (ID: 15,
+        16, 17 og 18) og viser en tilknyttet 3D‑avatar og elevnavn direkte på
+        markeren i kameraet.
+      </p>
 
-  <p>For at starte AR oplevelsen, klik på knappen nedenfor:</p>
-  <button class="vr-button" onclick="window.location.href='AR.html'">
-    <span>Launch AR</span>
-  </button>
-</body>
+      <h4>Hvad vi har bygget</h4>
+      <ul>
+        <li>
+          <strong>Marker-baseret AR</strong> med AR.js (jsartoolkit5 til
+          tracking) og <strong>A‑Frame</strong> til at vise GLTF-modeller.
+        </li>
+        <li>
+          Understøtter flere markers på samme tid – flere avatarer og navne kan
+          vises samtidigt.
+        </li>
+        <li>
+          Kører i browseren uden app-installation (desktop &amp; mobil – kræver
+          kameratilladelse).
+        </li>
+      </ul>
+
+      <h4>Vores proces &amp; research</h4>
+      <p>
+        Vi brugte den officielle dokumentation for <strong>A‑Frame</strong> og
+        <strong>AR.js</strong> som udgangspunkt. Gruppen vi delte gruppen op i 2
+        og researchede hver vores område (A‑Frame, AR.js), derefter delte vi
+        hvad vi havde lært med hindanden. Hvorefter vi sandboksede indtil vi
+        fandt en god løsning.
+      </p>
+
+      <h4>Teknologi &amp; hosting</h4>
+      <ul>
+        <li><strong>A‑Frame</strong> til 3D‑scenen og modelvisning.</li>
+        <li><strong>AR.js</strong> til marker-genkendelse (4x4_BCH_13_5_5).</li>
+        <li>
+          <strong>Netlify</strong> til hurtig deployment og hosting af webappen.
+        </li>
+      </ul>
+
+      <h4>Sådan bruger du appen</h4>
+      <ol>
+        <li>Åbn siden i en browser med kamera-adgang og tillad kameraet.</li>
+        <li>
+          Peg kameraet mod en af de understøttede 4x4_BCH_13_5_5-markers (ID
+          15–18) eller 31.
+        </li>
+        <li>Den tilsvarende avatar og elevnavn vises oven på markeren.</li>
+      </ol>
+    </article>
+
+    <p>Tryk på knappen for at starte:</p>
+    <button class="vr-button" onclick="window.location.href='AR.html'">
+      <span>Launch AR</span>
+    </button>
+    <p>
+      <em>Bemærk:</em> Lysforhold og kameraposition kan påvirke
+      tracking-kvaliteten.
+    </p>
+  </body>
 </html>
