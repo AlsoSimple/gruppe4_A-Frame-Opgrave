@@ -1,8 +1,11 @@
 Model Information:
-* title:	Dirty Toilet
-* source:	https://sketchfab.com/3d-models/dirty-toilet-5878a356ba1144a8aa4e214e511b523d
-* author:	davidtsoenyane (https://sketchfab.com/davidtsoenyane)
+* title:	Toilet
+* source:	https://sketchfab.com/3d-models/toilet-adb3b931f3ef4941830eea9705657a3d
+* author:	Urpo (https://sketchfab.com/Urpo)
 
 Model License:
-* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
-* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Toilet" (https://sketchfab.com/3d-models/toilet-adb3b931f3ef4941830eea9705657a3d) by Urpo (https://sketchfab.com/Urpo) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
