@@ -153,3 +153,28 @@ article h3 {
     line-height: 50px;
   }
 }
+
+article {
+  max-width: 800px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+
+article p,
+article ul,
+article ol {
+  margin-bottom: 1rem;
+}
+
+
+article ul,
+article ol {
+  padding-left: 1.5rem;
+}
+
+article h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-accent);
+}
