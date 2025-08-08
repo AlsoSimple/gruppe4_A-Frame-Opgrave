@@ -1,42 +1,37 @@
-This project includes the following third-party 3D models from Sketchfab.
-Attributions are provided in accordance with their licenses.
+# 3D Asset Credits
 
-1. oneminimalist — “Minimal Wood Soap Dispenser – Low Poly”
-   License: Creative Commons Attribution (CC BY 4.0)
-   Author: oneminimalist
-   Source: https://sketchfab.com/3d-models/minimal-wood-soap-dispenser-low-poly-315eb88a19fa4537b3810ec71c0e86b2
-   License link: https://creativecommons.org/licenses/by/4.0/
-   Attribution (required):
+## Minimal Wood Soap Dispenser – Low Poly
 
-“Minimal Wood Soap Dispenser – Low Poly” by oneminimalist, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), via Sketchfab (https://sketchfab.com/3d-models/minimal-wood-soap-dispenser-low-poly-315eb88a19fa4537b3810ec71c0e86b2).
-Modifications: None
+- Author: oneminimalist
+- License: Creative Commons Attribution (CC BY 4.0)
+- Source: https://sketchfab.com/3d-models/minimal-wood-soap-dispenser-low-poly-315eb88a19fa4537b3810ec71c0e86b2
+- License link: https://creativecommons.org/licenses/by/4.0/
+- Attribution: "Minimal Wood Soap Dispenser – Low Poly" by oneminimalist, licensed under CC BY 4.0.
+- Modifications: None
 
-2. plaggy — “Toilet Paper Roll”
-   License: CC0 (Public Domain)
-   Author: plaggy
-   Source: https://sketchfab.com/3d-models/cc0-toilet-paper-roll-6d5284b842434413a17133f7bf259669
-   License link: https://creativecommons.org/publicdomain/zero/1.0/
-   Attribution: Not required under CC0, but appreciated.
+## Toilet Paper Roll
 
-“Toilet Paper Roll” by plaggy, released under CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/), via Sketchfab (https://sketchfab.com/3d-models/cc0-toilet-paper-roll-6d5284b842434413a17133f7bf259669).
-Modifications: None
+- Author: plaggy
+- License: CC0 (Public Domain)
+- Source: https://sketchfab.com/3d-models/cc0-toilet-paper-roll-6d5284b842434413a17133f8dfbaba1
+- License link: https://creativecommons.org/publicdomain/zero/1.0/
+- Attribution: "Toilet Paper Roll" by plaggy, released under CC0.
+- Modifications: None
 
-3. davidtsoenyane — “Dirty Toilet”
-   License: “Free Standard” (platform-specific)
-   Author: davidtsoenyane
-   Source: https://sketchfab.com/3d-models/dirty-toilet-5878a356ba1144a8aa4e214e511b523d
-   License link: https://sketchfab.com/licenses
-   Attribution (required):
+## Toilet
 
-“Dirty Toilet” by davidtsoenyane, used under Sketchfab’s Free Standard License (https://sketchfab.com/licenses), via Sketchfab (https://sketchfab.com/3d-models/dirty-toilet-5878a356ba1144a8aa4e214e511b523d).
-Modifications: None
+- Author: Urpo
+- License: Creative Commons Attribution (CC BY 4.0)
+- Source: https://sketchfab.com/3d-models/toilet-adb3b931f3ef4941830eea9705657a3d
+- License link: https://creativecommons.org/licenses/by/4.0/
+- Attribution: "Toilet" by Urpo, licensed under CC BY 4.0.
+- Modifications: None
 
-4. eskethot — “Trashcan”
-   License: Creative Commons Attribution (CC BY 4.0)
-   Author: eskethot
-   Source: https://sketchfab.com/3d-models/trashcan-e3247e0bc3d3431fafc97766a8bb399d
-   License link: https://creativecommons.org/licenses/by/4.0/
-   Attribution (required):
+## Trashcan
 
-“Trashcan” by eskethot, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), via Sketchfab (https://sketchfab.com/3d-models/trashcan-e3247e0bc3d3431fafc97766a8bb399d).
-Modifications: None
+- Author: eskethot
+- License: Creative Commons Attribution (CC BY 4.0)
+- Source: https://sketchfab.com/3d-models/trashcan-e3247e0bc3d3431fafc97766a8bb399d
+- License link: https://creativecommons.org/licenses/by/4.0/
+- Attribution: "Trashcan" by eskethot, licensed under CC BY 4.0, via Sketchfab.
+- Modifications: None
