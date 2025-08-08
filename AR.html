@@ -3,10 +3,12 @@
   <!-- <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script> -->
   <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-  <!-- <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script> -->
 
   <body style="margin: 0px; overflow: hidden">
-    <a-scene embedded arjs="sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 4x4_BCH_13_5_5;">
+    <a-scene
+      embedded
+      arjs="sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 4x4_BCH_13_5_5;"
+    >
       <!-- Det er en del af AR.js et JavaScript bibliotek til web AR. Ofte anvendes der <a-scene> i A-Frame til AR funktioner. -->
       <!-- Webcame: Dette viser en kamerakilde, det er et webkamera i forhold til en video og billede. -->
       <!-- Mono_and_matrix:  AR.js skal anvende både monokromo markør som f.eks. Hiro-markøren og matrix- baserede stregkode som qr-kode. Hvilket gør at begge markører kan bruges i en og samme scene. -->
@@ -18,17 +20,34 @@
       <a-marker preset="hiro">
         <!-- Det vil sige  at den henvise og arbejder med a-marker.
          Hiro maker er en standardmarkør, men er ikke særlig brugervendelig. -->
-        <a-entity position="0 0 0" scale="0.05 0.05 0.05" gltf-model="https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"></a-entity>
+        <a-entity
+          position="0 0 0"
+          scale="0.05 0.05 0.05"
+          gltf-model="https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+        ></a-entity>
       </a-marker>
 
       <a-marker type="barcode" value="15">
-        <a-entity gltf-model="ASSETS/gltf/asswipe/scene.gltf" position="0 0 0" scale="0.5 0.5 0.5"></a-entity>
+        <a-entity
+          gltf-model="ASSETS/gltf/toiletPaper/scene.gltf"
+          position="0 0 0"
+          scale="5.5 5.5 5.5"
+        ></a-entity>
         <a-text value="Daniel" color="red" position="0 2 0"></a-text>
       </a-marker>
 
       <a-marker type="barcode" value="16">
-        <a-entity gltf-model="ASSETS/gltf/plunger/scene.gltf" position="0 0 0" scale="1 1 1"></a-entity>
-        <a-text value="Oliver Bredmose" color="red" position="-1.5 5 0" width="10"></a-text>
+        <a-entity
+          gltf-model="ASSETS/gltf/soapDispenser/scene.gltf"
+          position="0 0 0"
+          scale="8 8 8"
+        ></a-entity>
+        <a-text
+          value="Oliver Bredmose"
+          color="red"
+          position="-1.5 5 0"
+          width="10"
+        ></a-text>
       </a-marker>
 
       <!-- <a-marker type="barcode" value="17">
@@ -38,25 +57,60 @@
 
       <a-marker type="barcode" value="18">
         <!-- Barcode eller stregkodemarkør er en automatiske lavet og generede markør, da den dannes ud fra matrixberegninger, der betyder kvadratiske række som søjler. -->
-        <a-entity gltf-model="ASSETS/gltf/toilet/scene.gltf" position="0 0 0" scale="2 2 2"></a-entity>
+        <a-entity
+          gltf-model="ASSETS/gltf/toilet/scene.gltf"
+          position="0 0 0"
+          scale="2 2 2"
+        ></a-entity>
         <!-- Her indlæse vores 3D-Objektet, derefter kommer placering af objektet og efter kommer opløsningen af objektet. -->
-        <a-text value="Simon Hasselflug" color="blue" position="-2 3 0" width="10"></a-text>
+        <a-text
+          value="Simon Hasselflug"
+          color="blue"
+          position="-2 3 0"
+          width="10"
+        ></a-text>
       </a-marker>
       <!-- Ved a frame eller <a-scene> er element globale rodobjekt, som indeholder alle slags elementer (entiteter) i den virtuelle verden, du laver, opretter og håndtere den under ved 3D veje og objekter som eksempelvis via lærred og VR og AR-understøtter. -->
       <!-- a-scene er vigtig med at holde sammen på A-frame-scene, som tager sig af tekniske understøttelse, der er fokus på at skabe indhold, der ønsker at vise i den virtuelle verden. -->
 
       <a-marker type="barcode" value="31">
-        <a-entity gltf-model="ASSETS/gltf/asswipe/scene.gltf" position="2 0 0" scale="0.5 0.5 0.5"></a-entity>
+        <a-entity
+          gltf-model="ASSETS/gltf/asswipe/scene.gltf"
+          position="2 0 0"
+          scale="0.5 0.5 0.5"
+        ></a-entity>
         <a-text value="Daniel" color="red" position="2 2 0"></a-text>
 
-        <a-entity gltf-model="ASSETS/gltf/plunger/scene.gltf" position="-2 0 0" scale="1 1 1"></a-entity>
-        <a-text value="Oliver Bredmose" color="red" position="-2 5 0" width="10"></a-text>
+        <a-entity
+          gltf-model="ASSETS/gltf/plunger/scene.gltf"
+          position="-2 0 0"
+          scale="1 1 1"
+        ></a-entity>
+        <a-text
+          value="Oliver Bredmose"
+          color="red"
+          position="-2 5 0"
+          width="10"
+        ></a-text>
 
-        <a-entity gltf-model="ASSETS/gltf/garbageCan/scene.gltf" position="0 0 2" scale="1.5 1.5 1.5"></a-entity>
+        <a-entity
+          gltf-model="ASSETS/gltf/garbageCan/scene.gltf"
+          position="0 0 2"
+          scale="1.5 1.5 1.5"
+        ></a-entity>
         <a-text value="Soren Trashcan" color="green" position="0 3 2"></a-text>
 
-        <a-entity gltf-model="ASSETS/gltf/toilet/scene.gltf" position="0 0 -2" scale="2 2 2"></a-entity>
-        <a-text value="Simon Hasselflug" color="blue" position="0 3 -2" width="10"></a-text>
+        <a-entity
+          gltf-model="ASSETS/gltf/toilet/scene.gltf"
+          position="0 0 -2"
+          scale="2 2 2"
+        ></a-entity>
+        <a-text
+          value="Simon Hasselflug"
+          color="blue"
+          position="0 3 -2"
+          width="10"
+        ></a-text>
       </a-marker>
 
       <a-entity camera></a-entity>
