@@ -16,7 +16,6 @@
       <!-- 4x4: Menes der at markøren har et 4x4 gitter. -->
       <!-- BCH_13_5_5: Her henvises der til BCH-fejlkorrektionskode, (BCH betyder Bose-Chaudhuri-Hocquenghem), som anvendes til sikker aflæsning, selv hvis nogle af markørerne og stregkoderne er uklare. -->
 
-      <!-- Marker 1: Oliver ID 16 -->
       <a-marker preset="hiro">
         <!-- Det vil sige  at den henvise og arbejder med a-marker.
          Hiro maker er en standardmarkør, men er ikke særlig brugervendelig. -->
@@ -27,6 +26,7 @@
         ></a-entity>
       </a-marker>
 
+      <!-- Marker 2: Daniel ID 15 -->
       <a-marker type="barcode" value="15">
         <a-entity
           gltf-model="ASSETS/gltf/toiletPaper/scene.gltf"
@@ -36,6 +36,7 @@
         <a-text value="Daniel" color="red" position="0 2 0"></a-text>
       </a-marker>
 
+      <!-- Marker 3: Oliver ID 16 -->
       <a-marker type="barcode" value="16">
         <a-entity
           gltf-model="ASSETS/gltf/soapDispenser/scene.gltf"
@@ -50,15 +51,22 @@
         ></a-text>
       </a-marker>
 
+      <!-- Marker 4: Soren ID 17 -->
       <a-marker type="barcode" value="17">
         <a-entity
           gltf-model="ASSETS/gltf/garbageCan/scene.gltf"
           position="0 0 0"
           scale="2.5 2.5 2.5"
         ></a-entity>
-        <a-text value="Soren" color="green" position="-0.75 2.5 0" width="15"></a-text>
+        <a-text
+          value="Soren"
+          color="green"
+          position="-0.75 2.5 0"
+          width="15"
+        ></a-text>
       </a-marker>
 
+      <!-- Marker 5: Simon ID 18 -->
       <a-marker type="barcode" value="18">
         <!-- Barcode eller stregkodemarkør er en automatiske lavet og generede markør, da den dannes ud fra matrixberegninger, der betyder kvadratiske række som søjler. -->
         <a-entity
@@ -66,17 +74,19 @@
           position="0 0 0"
           scale="2 2 2"
         ></a-entity>
-        <!-- Her indlæse vores 3D-Objektet, derefter kommer placering af objektet og efter kommer opløsningen af objektet. -->
+        <!-- Her indlæses vores 3D-Objektet, derefter kommer placering af objektet og efter kommer opløsningen af objektet. -->
         <a-text
           value="Simon Hasselflug"
           color="blue"
           position="-2 3 0"
           width="10"
         ></a-text>
+        <!-- Her tilføjes og positioneres tekst, der viser navnet på personen, der er tilknyttet markeren. -->
       </a-marker>
       <!-- Ved a frame eller <a-scene> er element globale rodobjekt, som indeholder alle slags elementer (entiteter) i den virtuelle verden, du laver, opretter og håndtere den under ved 3D veje og objekter som eksempelvis via lærred og VR og AR-understøtter. -->
       <!-- a-scene er vigtig med at holde sammen på A-frame-scene, som tager sig af tekniske understøttelse, der er fokus på at skabe indhold, der ønsker at vise i den virtuelle verden. -->
 
+      <!-- Marker 6: Alle Models ID: 31-->
       <a-marker type="barcode" value="31">
         <a-entity
           gltf-model="ASSETS/gltf/toiletPaper/scene.gltf"
@@ -102,7 +112,12 @@
           position="0 0 0"
           scale="2.5 2.5 2.5"
         ></a-entity>
-        <a-text value="Soren" color="green" position="-0.75 2.5 0" width="10"></a-text>
+        <a-text
+          value="Soren"
+          color="green"
+          position="-0.75 2.5 0"
+          width="10"
+        ></a-text>
 
         <a-entity
           gltf-model="ASSETS/gltf/toilet/scene.gltf"
